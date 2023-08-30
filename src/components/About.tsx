@@ -6,7 +6,7 @@ import { BsPerson } from 'react-icons/bs';
 const About = () => {
   return (
     <div className="items-center justify-center md:px-[400px]">
-      <div className="justify-center px-10 py-10 text-justify text-[#b5bcbf]  md:w-[800px] md:flex md:gap-8">
+      <div className="justify-center px-6 py-10 text-justify text-[#b5bcbf]  md:w-[800px] md:flex md:gap-8">
         <div className="flex flex-col gap-5 font-light">
           <h1 className="flex gap-2 py-2 text-2xl font-bold">
             <BsPerson
@@ -16,7 +16,7 @@ const About = () => {
             About Me
           </h1>
           <p>
-            Hello, My name is
+            Hello, My name is{' '}
             <span className={`${styles.Span} font-bold`}>
               Aluko Olakunle Samuel
             </span>
@@ -43,7 +43,7 @@ const About = () => {
             their abilities, can engage with and benefit from the products I
             create.
           </p>
-          <p>
+          <p className="hidden">
             Working at the residency agency, start-up, and student-led design
             has equipped me with a versatile skill set and the ability to adapt
             to different challenges. Each environment has contributed to my
@@ -63,7 +63,7 @@ const About = () => {
                 </div> */}
           <div
             className="relative bottom-0 right-0 z-0 bg-[#c5c2c2] border-2 border-black 
-                                rounded-xl md:w-[168px] md:h-[168px] w-60 h-60">
+                                rounded-xl md:w-[168px] md:h-[168px] w-50 h-50 invisible md:visible">
             <img
               src={Sam}
               alt=""
