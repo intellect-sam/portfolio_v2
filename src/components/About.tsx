@@ -1,7 +1,7 @@
 import styles from '../style';
 import Sam from '../assets/images/sam.png';
 import back from '../assets/images/back.png';
-import { BsPerson } from 'react-icons/Bs';
+// import { BsPerson } from 'react-icons/Bs';
 
 const About = () => {
   return (
@@ -9,16 +9,16 @@ const About = () => {
       <div className="justify-center px-10 py-10 text-justify text-[#b5bcbf]  md:w-[800px] md:flex md:gap-8">
         <div className="flex flex-col gap-5 font-light">
           <h1 className="flex gap-2 py-2 text-2xl font-bold">
-            <BsPerson
+            {/* <BsPerson
               color="#e8b025"
               className="mt-1"
-            />{' '}
-            About Me{' '}
+            /> */}
+            About Me
           </h1>
           <p>
-            Hello, My name is{' '}
+            Hello, My name is
             <span className={`${styles.Span} font-bold`}>
-              Aluko Olakunle Samuel{' '}
+              Aluko Olakunle Samuel
             </span>
             and i enjoy building things that you like seeing on the web. My
             interest for programming has been since i got into the university
@@ -29,7 +29,7 @@ const About = () => {
           </p>
           <p>
             Throughout my career, I have had the privilege of working
-            collaboratively in various settings, including a{' '}
+            collaboratively in various settings, including a
             <span className={`${styles.Span}`}>
               residency agency, a start-up, and a student-led design
             </span>
