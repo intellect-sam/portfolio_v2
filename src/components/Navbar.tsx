@@ -10,10 +10,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-between px-10 py-6 md:items-center md:py-10 md:mx-80 md:px-14 ${styles.textWhite}`}>
+      className={`flex justify-between px-2 py-6 md:items-center md:py-10 md:mx-80 md:px-14 ${styles.textWhite}`}>
       <a
         href="/"
-        className="text-2xl font-bold font-pop">
+        className="text-xl font-bold font-pop">
         Sam.Dev
       </a>
 
@@ -41,12 +41,12 @@ const Navbar = () => {
         <div>
           {toggle ? (
             <FaTimes
-              className="object-contain w-8 h-8"
+              className="object-contain w-5 h-5"
               onClick={() => setToggle(!toggle)}
             />
           ) : (
             <FaBars
-              className="object-contain w-8 h-8"
+              className="object-contain w-5 h-5"
               onClick={() => setToggle(!toggle)}
             />
           )}
