@@ -6,15 +6,17 @@ import { BsPerson } from 'react-icons/bs';
 const About = () => {
   return (
     <div className="items-center justify-center md:px-[400px]">
-      <div className="justify-center px-6 py-10 text-justify text-[#b5bcbf]  md:w-[800px] md:flex md:gap-8">
+      <div className="justify-center px-6 py-10 text-justify text-[#868c8f]  md:w-[800px] md:flex md:gap-8">
         <div className="flex flex-col gap-5 font-light">
-          <h1 className="flex gap-2 py-2 text-2xl font-bold">
-            <BsPerson
-              color="#e8b025"
-              className="mt-1"
-            />
-            About Me
-          </h1>
+          <div className="sticky top-0">
+            <h1 className="flex gap-2 py-2 text-xl font-bold">
+              <BsPerson
+                color="#e8b025"
+                className="mt-1"
+              />
+              About Me
+            </h1>
+          </div>
           <p>
             Hello, My name is{' '}
             <span className={`${styles.Span} font-bold`}>

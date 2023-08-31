@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <section
       className={`flex flex-col-reverse justify-center py-[100px] md:py-[250px] 
-                        px-5 md:gap-5 md:flex-row md:mx-40 md:flex md:px-96 h-full ${styles.textWhite}`}>
+                        px-5 md:gap-5 md:flex-row md:mx-40 md:flex md:px-96 max-h-screen ${styles.textWhite}`}>
       <img
         src={code2}
         alt=""
@@ -38,13 +38,13 @@ const Hero = () => {
         <div className="w-full text-4xl font-bold tracking-wide md:text-8xl font-pop ">
           Aluko O. Samuel.
         </div>
-        <p className="py-4 my-3 md:text-xl font-light text-justify text-[#b5bcbf] md:text-justify md:w-2/3">
+        <p className="py-4 my-3 md:text-xl font-light text-justify text-[#8d9294] md:text-justify md:w-2/3">
           I`m a software engineer focused on building beautiful interfaces and
           experiences, specializing in crafting exceptional digital experiences.
           With a keen eye for design, I not only build but also contribute to
           the aesthetic aspects of the products I work on 👨‍💻
         </p>
-        <div className="flex justify-center gap-3 text-sm font-light md:text-2xl md:justify-start md:items-start">
+        <div className="flex justify-center gap-3 text-sm font-light text-[#8d9294]  md:text-2xl md:justify-start md:items-start">
           <FaGithub />
           <FaInstagram />
           <FaLinkedin />
