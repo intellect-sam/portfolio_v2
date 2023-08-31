@@ -8,14 +8,31 @@ import {
   code,
   code2,
 } from '../assets/images';
-import {
-  FaGithub,
-  FaWhatsapp,
-  FaTwitter,
-  FaLinkedin,
-  FaInstagram,
-} from 'react-icons/fa';
+import { FaGithub, FaWhatsapp, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import styles from '../style';
+import { IconBaseProps } from 'react-icons';
+import { handleWhatsApp } from './utils';
+
+interface SocialMediaIconProps {
+  platform: string;
+  profileLink: string;
+  icon: React.ReactElement<IconBaseProps>;
+}
+
+const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({
+  platform,
+  profileLink,
+  icon,
+}) => {
+  return (
+    <a
+      href={profileLink}
+      target="_blank"
+      rel="noopener noreferrer">
+      {icon}
+    </a>
+  );
+};
 
 const Hero = () => {
   return (
@@ -45,11 +62,24 @@ const Hero = () => {
           the aesthetic aspects of the products I work on 👨‍💻
         </p>
         <div className="flex justify-center gap-3 text-sm font-light text-[#8d9294]  md:text-2xl md:justify-start md:items-start">
-          <FaGithub />
-          <FaInstagram />
-          <FaLinkedin />
-          <FaWhatsapp />
-          <FaTwitter />
+          <SocialMediaIcon
+            platform="Twitter"
+            profileLink="https://twitter.com/AlukoKunleSam"
+            icon={<FaTwitter />}
+          />
+          <SocialMediaIcon
+            platform="Github"
+            profileLink="https://github.com/intellect-sam"
+            icon={<FaGithub />}
+          />
+          <button onClick={handleWhatsApp}>
+            <FaWhatsapp />
+          </button>
+          <SocialMediaIcon
+            platform="Linkedin"
+            profileLink="linkedin.com/in/olakunle-aluko-b62a52226"
+            icon={<FaLinkedin />}
+          />
         </div>
         <div className="py-10">
           <div>

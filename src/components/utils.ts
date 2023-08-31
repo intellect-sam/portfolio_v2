@@ -7,3 +7,13 @@ export const handleDownloadResume = () => {
   link.download = 'Aluko Olakunle Samuel.pdf';
   link.click();
 };
+
+const phoneNumber = '+2349063779896';
+const message = 'Hello';
+
+export const handleWhatsApp = () => {
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+  window.open(whatsappUrl, '_blank');
+};
