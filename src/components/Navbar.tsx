@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { navLinks } from '../constants';
 import styles from '../style';
 // import { Link } from "react-router-dom";
+import { handleDownloadResume } from './utils';
 
 const Navbar = () => {
   const [active, setActive] = useState('Home');
@@ -11,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="sticky top-0">
       <nav
-        className={`flex justify-between px-2 py-6 md:items-center md:py-10 md:mx-80 md:px-14 ${styles.textWhite}`}>
+        className={`flex justify-between px-3 py-6 md:items-center md:py-10 md:mx-80 md:px-14 ${styles.textWhite}`}>
         <a
           href="/"
           className="text-xl font-bold font-pop">
@@ -32,7 +33,9 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="justify-end invisible md:visible">
-            <button className="justify-end px-2 py-1 text-sm font-bold text-white bg-red-700 rounded shadow-md hover:bg-blue-700">
+            <button
+              className="justify-end px-2 py-1 text-sm font-bold text-white bg-red-700 rounded shadow-md hover:bg-blue-700"
+              onClick={handleDownloadResume}>
               Resume
             </button>
           </div>
@@ -69,7 +72,9 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
-              <button className="justify-end px-2 py-2 mt-10 text-sm font-light text-white bg-red-500 rounded shadow-md hover:bg-blue-700">
+              <button
+                className="justify-end px-2 py-2 mt-10 text-sm font-light text-white bg-red-500 rounded shadow-md hover:bg-blue-700"
+                onClick={handleDownloadResume}>
                 Download CV
               </button>
             </ul>

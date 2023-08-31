@@ -20,7 +20,7 @@ import styles from '../style';
 const Hero = () => {
   return (
     <section
-      className={`flex flex-col-reverse justify-center py-[150px] md:py-[250px] 
+      className={`flex flex-col-reverse justify-center py-[120px] md:py-[250px] 
                         px-5 md:gap-5 md:flex-row md:mx-40 md:flex md:px-96 max-h-screen ${styles.textWhite}`}>
       <img
         src={code2}
@@ -35,7 +35,7 @@ const Hero = () => {
             left-0 w-[900px] md:w-full opacity-5 md:opacity-10 -z-50"
       />
       <div className="justify-center text-center md:mt-0 md:text-left">
-        <div className="w-full text-[30px] font-bold tracking-wide md:text-8xl font-pop ">
+        <div className="w-full text-[30px] font-bold tracking-wide md:text-8xl font-pop text-shadow-xl ">
           Aluko O. Samuel
         </div>
         <p className="py-4 my-3 md:text-xl font-light text-justify text-[#8d9294] md:text-justify md:w-2/3">
