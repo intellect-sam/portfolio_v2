@@ -35,8 +35,8 @@ const Hero = () => {
             left-0 w-[900px] md:w-full opacity-5 md:opacity-10 -z-50"
       />
       <div className="justify-center text-center md:mt-0 md:text-left">
-        <div className="w-full text-4xl font-bold tracking-wide md:text-8xl font-pop ">
-          Aluko O. Samuel.
+        <div className="w-full text-5xl font-bold tracking-wide md:text-8xl font-pop ">
+          Aluko O. Samuel
         </div>
         <p className="py-4 my-3 md:text-xl font-light text-justify text-[#8d9294] md:text-justify md:w-2/3">
           I'm a software engineer focused on building beautiful interfaces and
