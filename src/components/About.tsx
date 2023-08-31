@@ -6,10 +6,10 @@ import { BsPerson } from 'react-icons/bs';
 const About = () => {
   return (
     <div className="items-center justify-center md:px-[400px]">
-      <div className="justify-center px-6 py-10 text-justify text-[#868c8f]  md:w-[800px] md:flex md:gap-8">
+      <div className="justify-center px-6 py-10 text-justify  md:w-[800px] md:flex md:gap-8">
         <div className="flex flex-col gap-5 font-light">
           <div className="sticky top-0">
-            <h1 className="flex gap-2 py-2 text-xl font-bold">
+            <h1 className="flex gap-2 py-2 text-xl font-bold text-white">
               <BsPerson
                 color="#e8b025"
                 className="mt-1"
@@ -17,40 +17,46 @@ const About = () => {
               About Me
             </h1>
           </div>
-          <p>
-            Hello, My name is{' '}
-            <span className={`${styles.Span} font-bold`}>
-              Aluko Olakunle Samuel
-            </span>
-            and i enjoy building things that you like seeing on the web. My
-            interest for programming has been since i got into the university
-            where i read online blog and wrote HTML and CSS codes on paper, well
-            i could not afford a computer but was still fun 😂 for me then .
-            However, i started the journey of being a software developer 2020
-            during the pademic,
-          </p>
-          <p>
-            Throughout my career, I have had the privilege of working
-            collaboratively in various settings, including a
-            <span className={`${styles.Span}`}>
-              residency agency, a start-up, and a student-led design
-            </span>
-            . These experiences have provided me with valuable insights and
-            diverse perspectives.
-          </p>
-          <p>
-            Currently, my main focus lies in the development of accessible and
-            inclusive products and digital experiences for a wide range of
-            clients. I am passionate about ensuring that everyone, regardless of
-            their abilities, can engage with and benefit from the products I
-            create.
-          </p>
-          <p className="hidden">
-            Working at the residency agency, start-up, and student-led design
-            has equipped me with a versatile skill set and the ability to adapt
-            to different challenges. Each environment has contributed to my
-            growth as a professional.
-          </p>
+          <div className="text-[#8d9294]">
+            <p>
+              Hello, My name is{' '}
+              <span className={`${styles.Span} font-bold`}>
+                Aluko Olakunle Samuel
+              </span>{' '}
+              and i enjoy building things that you like seeing on the web. My
+              interest for programming has been since i got into the university
+              where i read online blog and wrote HTML and CSS codes on paper,
+              well i could not afford a computer but was still fun 😂 for me
+              then . However, i started the journey of being a software
+              developer 2020 during the pademic,
+            </p>
+            <br />
+            <p>
+              Throughout my career, I have had the privilege of working
+              collaboratively in various settings, including a
+              <span className={`${styles.Span}`}>
+                {' '}
+                residency agency, a start-up, and a student-led design
+              </span>
+              . These experiences have provided me with valuable insights and
+              diverse perspectives.
+            </p>
+            <br />
+            <p>
+              Currently, my main focus lies in the development of accessible and
+              inclusive products and digital experiences for a wide range of
+              clients. I am passionate about ensuring that everyone, regardless
+              of their abilities, can engage with and benefit from the products
+              I create.
+            </p>
+            <br />
+            <p className="invidible md:visible">
+              Working at the residency agency, start-up, and student-led design
+              has equipped me with a versatile skill set and the ability to
+              adapt to different challenges. Each environment has contributed to
+              my growth as a professional.
+            </p>
+          </div>
         </div>
 
         <div className="flex justify-center w-full md:mt-20">

@@ -20,7 +20,7 @@ import styles from '../style';
 const Hero = () => {
   return (
     <section
-      className={`flex flex-col-reverse justify-center py-[100px] md:py-[250px] 
+      className={`flex flex-col-reverse justify-center py-[200px] md:py-[250px] 
                         px-5 md:gap-5 md:flex-row md:mx-40 md:flex md:px-96 max-h-screen ${styles.textWhite}`}>
       <img
         src={code2}
@@ -39,7 +39,7 @@ const Hero = () => {
           Aluko O. Samuel.
         </div>
         <p className="py-4 my-3 md:text-xl font-light text-justify text-[#8d9294] md:text-justify md:w-2/3">
-          I`m a software engineer focused on building beautiful interfaces and
+          I'm a software engineer focused on building beautiful interfaces and
           experiences, specializing in crafting exceptional digital experiences.
           With a keen eye for design, I not only build but also contribute to
           the aesthetic aspects of the products I work on 👨‍💻
