@@ -1,6 +1,7 @@
 // This below code works foe the downloading of files
+import { resume } from '../assets';
 export const handleDownloadResume = () => {
-  const pdfUrl = 'src/assets/ALUKO-OLAKUNLE-S-Resume.pdf';
+  const pdfUrl = resume;
   const link = document.createElement('a');
   link.href = pdfUrl;
   link.target = '';
