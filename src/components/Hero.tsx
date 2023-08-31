@@ -20,8 +20,8 @@ import styles from '../style';
 const Hero = () => {
   return (
     <section
-      className={`flex flex-col-reverse justify-center py-[100px] md:py-[230px] 
-                        px-5 md:gap-5 md:flex-row md:mx-20 md:flex md:px-96 ${styles.textWhite}`}>
+      className={`flex flex-col-reverse justify-center py-[100px] md:py-[250px] 
+                        px-5 md:gap-5 md:flex-row md:mx-40 md:flex md:px-96 h-full ${styles.textWhite}`}>
       <img
         src={code2}
         alt=""
@@ -44,7 +44,7 @@ const Hero = () => {
           With a keen eye for design, I not only build but also contribute to
           the aesthetic aspects of the products I work on 👨‍💻
         </p>
-        <div className="flex justify-center gap-5 text-2xl font-light md:justify-start md:items-start">
+        <div className="flex justify-center gap-3 text-sm font-light md:text-2xl md:justify-start md:items-start">
           <FaGithub />
           <FaInstagram />
           <FaLinkedin />
