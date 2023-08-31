@@ -20,7 +20,6 @@ interface SocialMediaIconProps {
 }
 
 const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({
-  platform,
   profileLink,
   icon,
 }) => {
