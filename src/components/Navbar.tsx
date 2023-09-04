@@ -18,7 +18,6 @@ const Navbar = () => {
           className="text-xl font-bold font-pop">
           Sam.Dev
         </a>
-
         <div className="flex justify-between md:gap-8">
           <ul className="items-center justify-end flex-1 hidden list-none sm:flex">
             {navLinks.map((nav, index) => (
@@ -41,6 +40,7 @@ const Navbar = () => {
           </div>
         </div>
 
+        {/* For mobile device */}
         <div className="flex items-center justify-end flex-1 sm:hidden">
           <div>
             {toggle ? (

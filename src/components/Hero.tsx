@@ -14,7 +14,7 @@ import { IconBaseProps } from 'react-icons';
 import { handleWhatsApp } from './utils';
 
 interface SocialMediaIconProps {
-  platform: string;
+  platform?: string;
   profileLink: string;
   icon: React.ReactElement<IconBaseProps>;
 }
@@ -50,17 +50,18 @@ const Hero = () => {
         className="absolute md:top-[-200px] top-[250px] 
             left-0 w-[900px] md:w-full opacity-5 md:opacity-10 -z-50"
       />
-      <div className="justify-center text-center md:mt-0 md:text-left">
+      <div className="justify-center text-left md:mt-0">
+        <div className="text-[#8d9294] py-3">Hi, my name is</div>
         <div className="w-full text-[30px] font-bold tracking-wide md:text-8xl font-pop text-shadow-xl ">
           Aluko O. Samuel
         </div>
-        <p className="py-4 my-3 md:text-xl font-light text-justify text-[#8d9294] md:text-justify md:w-2/3">
+        <p className="py-3 my-3 md:text-xl font-light text-left text-[#8d9294] md:text-justify md:w-2/3">
           I'm a software engineer focused on building beautiful interfaces and
           experiences, specializing in crafting exceptional digital experiences.
           With a keen eye for design, I not only build but also contribute to
           the aesthetic aspects of the products I work on 👨‍💻
         </p>
-        <div className="flex justify-center gap-3 text-sm font-light text-[#8d9294]  md:text-2xl md:justify-start md:items-start">
+        <div className="flex gap-3 text-sm font-light text-[#8d9294]  md:text-2xl md:justify-start md:items-start">
           <SocialMediaIcon
             platform="Twitter"
             profileLink="https://twitter.com/AlukoKunleSam"
@@ -84,7 +85,7 @@ const Hero = () => {
           <div>
             <p className={`bg-primary ${styles.Stack} py-5`}>Tech Stacks</p>
           </div>
-          <div className="flex justify-center w-full gap-4 md:justify-start">
+          <div className="flex w-full gap-4 md:justify-start">
             <div className={`${styles.StackBox}`}>
               <img
                 src={html}

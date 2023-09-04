@@ -2,7 +2,7 @@
 import { Navbar, Hero, About } from './components';
 
 const App = () => (
-  <div className="overflow-hidden">
+  <div className="px-4 overflow-hidden">
     <div className="bg-[#030712] border-b-4 shadow-md border-black">
       <div className="sticky top-0">
         <Navbar />
